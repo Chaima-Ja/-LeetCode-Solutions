@@ -7,12 +7,11 @@ class Solution(object):
         :type n: int
         :rtype: None
         """
-        # Start from the end of nums1 and nums2
-        p1 = m - 1  # Pointer for the last element in nums1's valid part
-        p2 = n - 1  # Pointer for the last element in nums2
-        p = m + n - 1  # Pointer for the last position in nums1
+        p1 = m - 1  
+        p2 = n - 1  
+        p = m + n - 1  
 
-        # Merge in reverse order
+        
         while p1 >= 0 and p2 >= 0:
             if nums1[p1] > nums2[p2]:
                 nums1[p] = nums1[p1]
